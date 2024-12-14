@@ -7,7 +7,7 @@
 
 int ValidSquares = 136, SpecialMove = 128, PenaltyValue = 8e3, NewEvaluation = 0, EnPassantSquare = 0, StartingSquare, PositionsEvaluated, MoveCount, J, Z, MovingSide = 16, *p, c[9]; /* M=0x88  10001000   */ // better get moving side from fen
 
-char L, StartingBestSquare, TargetBestSquare, CastlingRights = 0,
+char L, StartingBestSquare, TargetBestSquare, CastlingRights = 0, //this is for later micromax implementations
                                               PieceValues[] = {0, 2, 2, 7, -1, 8, 12, 23}, /* relative piece values    */
     PieceMovements[] = {-16, -15, -17, 0, 1, 16, 0, 1, 16, 15, 17, 0, 14, 18, 31, 33, 0,   /* step-vector lists */
                         7, -1, 11, 6, 8, 3, 6,                                             /* 1st dir. in PieceMovements[] per piece. Which piece has which moves*/
